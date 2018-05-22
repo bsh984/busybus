@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>restaurant listing</title>
+    <meta charset="utf-8" content="width=device-width,initial-scale=1">
+    <title>BusyBus</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://use.fontawesome.com/37471687aa.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
   </head>
   <body>
+
     <section class="container">
+      <div class="imgsize">
+        <img src="/images/header.png">
+      </div>
       <nav>
-        <div class="arrival-time-left">
-          <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        <div class="arrow-left">
+          <i class="fas fa-angle-left fa-3x" aria-hidden="true"></i>
         </div>
         <div class="nav-back">
           <h2>Stops</h2>
@@ -19,8 +23,17 @@
         <div class="nav-title">
           <h1>Stop Information</h1>
         </div>
+        <div class="nav-clock">
+          <i class="fas fa-clock fa-2x"></i>
+        </div>
+        <div class="nav-clock">
+          <i class="fas fa-star fa-2x"></i>
+        </div>
       </nav>
       <section class="stop-name">
+        <div class="pin">
+          <i class="fas fa-map-pin fa-3x"></i>
+        </div>
         <h4>Washington & State</h4>
         <h2>The next bus to arrive is...</h2>
       </section>
@@ -28,7 +41,7 @@
         <div class="location">
           <div class="content">
             <h4>60</h4>
-            <h2>Eastbound</h2>
+            <h2>Eastbound to</h2>
             <h3>Randolph/Harbor Dr</h3>
           </div>
           <div class="arrival-time">
@@ -38,41 +51,41 @@
         <div class="location">
           <div class="content">
             <h4>124</h4>
-            <h2>Eastbound</h2>
+            <h2>Eastbound to</h2>
             <h3>Navy Pier</h3>
           </div>
           <div class="arrival-time">
-            <h1>3 mins</h1>
+            <h1>4 mins</h1>
           </div>
         </div>
         <div class="location">
           <div class="content">
             <h4>151</h4>
-            <h2>Northbound</h2>
+            <h2>Northbound to</h2>
             <h3>Devon/Clark</h3>
           </div>
           <div class="arrival-time">
-            <h1>3 mins</h1>
+            <h1>5 mins</h1>
           </div>
         </div>
         <div class="location">
           <div class="content">
             <h4>J14</h4>
-            <h2>Southbound</h2>
+            <h2>Southbound to</h2>
             <h3>103rd/Stony Island</h3>
           </div>
           <div class="arrival-time">
-            <h1>3 mins</h1>
+            <h1>8 mins</h1>
           </div>
         </div>
         <div class="location">
           <div class="content">
             <h4>124</h4>
-            <h2>Southbound</h2>
+            <h2>Southbound to</h2>
             <h3>Navy Pier</h3>
           </div>
           <div class="arrival-time">
-            <h1>3 mins</h1>
+            <h1>9 mins</h1>
           </div>
         </div>
         <div class="location">
@@ -82,7 +95,17 @@
             <h3>Jackson Park Express</h3>
           </div>
           <div class="arrival-time">
-            <h1>3 mins</h1>
+            <h1>11 mins</h1>
+          </div>
+        </div>
+        <div class="location">
+          <div class="content">
+            <h4>124</h4>
+            <h2>Eastbound to</h2>
+            <h3>Navy Pier</h3>
+          </div>
+          <div class="arrival-time">
+            <h1>14 mins</h1>
           </div>
         </div>
         <div class="location">
@@ -91,8 +114,8 @@
             <h2>Out of Service</h2>
             <h3>Cottage Grove</h3>
           </div>
-          <div class="arrival-time">
-            <h1>Resumes at 12:10am</h1>
+          <div class="arrival-time-suspended">
+            <h5>Resumes <h5> <h1>12:10am</h1>
           </div>
         </div>
         <div class="location">
@@ -101,8 +124,8 @@
             <h2>Out of Service</h2>
             <h3>Madison</h3>
           </div>
-          <div class="arrival-time">
-            <h1>Resumes at 12:10am</h1>
+          <div class="arrival-time-suspended">
+            <h5>Resumes </h5> <h1>12:10am</h1>
           </div>
         </div>
         <div class="location">
@@ -111,11 +134,34 @@
             <h2>Out of Service</h2>
             <h3>Streeterville/Taylor</h3>
           </div>
-          <div class="arrival-time">
-            <h1>Resumes at 6:00am</h1>
+          <div class="arrival-time-suspended">
+            <h5>Resumes </h5> <h1>6:00am</h1>
           </div>
         </div>
       </section>
+      <section class="footer">
+        <div class="footer-icons selected-icon">
+          <i class="fas fa-bus fa-3x"></i>
+          <h6>Bus</h6>
+        </div>
+        <div class="footer-icons">
+          <i class="fas fa-train fa-3x"></i>
+          <h6>Rail</h6>
+        </div>
+        <div class="footer-icons">
+            <i class="fas fa-star fa-3x"></i>
+            <h6>Saved</h6>
+        </div>
+        <div class="footer-icons">
+          <i class="fas fa-map-marker-alt fa-3x"></i>
+          <h6>Nearby</h6>
+        </div>
+        <div class="footer-icons">
+          <i class="fas fa-wrench fa-3x"></i>
+          <h6>Settings</h6>
+        </div>
+      </section>
     </section>
+
   </body>
 </html>

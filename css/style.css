@@ -15,10 +15,28 @@
   padding-right: 1em;
 }
 
-.arrival-time-left {
+.arrival-time-suspended {
+  float: right;
+	padding: 0 1.4em 0 0;
+  width: 30%;
+}
+
+.arrival-time-suspended h1 {
+  font-weight: 200;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.arrival-time-suspended h5 {
+  font-weight: 200;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.arrow-left {
   color: #007AFF;
   float: left;
-  margin-top: 1.5%;
+  /* margin-top: .4%; */
 }
 
 body {
@@ -48,8 +66,35 @@ body {
 
 .content h4{
   float: left;
+  font-size: 2.5em;
+  font-weight: 200;
   padding-left: .2em;
   text-align: right;
+}
+
+.fa-bus{
+  color: #007AFF;
+}
+
+.fa-clock,.fa-star{
+  color: #007AFF;
+}
+
+.footer {
+  background-color: #eee;
+  width: 100%;
+}
+
+.footer-icons {
+  color: #888;
+  display: inline-block;
+  margin: 1em 4.5%;
+  width: 10%;
+}
+
+.selected-icon h6 {
+  color: #007AFF;
+  padding-left: 4px;
 }
 
 h1 {
@@ -67,6 +112,7 @@ h3 {
   font-size: 1.5em;
   font-weight: 700;
   line-height: 1.5em;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -75,16 +121,26 @@ h4 {
   padding: 2%;
 }
 
+h5 {
+  font-size: 1.3em;
+  line-height: 1.2em;
+}
+
+h6 {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
 .location {
   background-color: inherit;
   border-bottom: 1px solid #000;
   padding: 1em 0 0 0;
 	float: left;
 	width: 100%;
-}
-
-.location:hover {
-  background-color: #999;
 }
 
 nav {
@@ -98,13 +154,19 @@ nav {
 .nav-back{
   color: #007AFF;
   display: inline-block;
+  font-size: 1.3em;
   margin-left: 1.5%;
+}
+
+.nav-clock {
+  display: inline-block;
+  margin: 1%;
 }
 
 .nav-title {
   color: #000;
   display: inline-block;
-  margin-left: 10.5%;
+  margin: 0 8%;
   text-align: center;
 }
 
@@ -112,6 +174,10 @@ nav {
   padding: 0 0 0 0;
   width: 100%;
   background-color: #fff;
+}
+
+.pin {
+  display: inline-block;
 }
 
 .stop-name {
@@ -122,4 +188,9 @@ nav {
 .stop-name h2 {
   text-transform: uppercase;
   weight: 200;
+}
+
+.stop-name h4 {
+  display: inline-block;
+  padding: .8em 0 .8em .8em;
 }
