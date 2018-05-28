@@ -8,158 +8,533 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
   </head>
   <body>
-
     <section class="container">
-      <div class="imgsize">
-        <img src="/images/header.png">
-      </div>
       <nav>
-        <div class="arrow-left">
-          <i class="fas fa-angle-left fa-3x" aria-hidden="true"></i>
+        <div class="imgsize">
+          <img src="/images/header.png">
         </div>
-        <div class="nav-back">
-          <h2>Stops</h2>
-        </div>
-        <div class="nav-title">
-          <h1>Stop Information</h1>
-        </div>
-        <div class="nav-clock">
-          <i class="fas fa-clock fa-2x"></i>
-        </div>
-        <div class="nav-clock">
-          <i class="fas fa-star fa-2x"></i>
-        </div>
+        <table class="nav-table">
+          <tr>
+            <td class="nav-cell-1"><i class="fas fa-angle-left fa-3x arrow-left" aria-hidden="true"></i><h2>Stops</h2></td>
+            <td class="nav-cell-2"><h1 class="nav-info">Stop Information</h1></td>
+            <td class="nav-cell-3"><i class="fas fa-clock fa-2x nav-info"></i><i class="fas fa-heart fa-2x nav-info nav-3"></i></td>
+          </tr>
+        </table>
       </nav>
       <section class="stop-name">
         <div class="pin">
-          <i class="fas fa-map-pin fa-3x"></i>
+          <i class=" fa-3x fa-map-pin fas"></i>
         </div>
         <h4>Washington & State</h4>
         <h2>The next bus to arrive is...</h2>
       </section>
       <section class="nextbus-list">
-        <div class="location">
-          <div class="content">
-            <h4>60</h4>
-            <h2>Eastbound to</h2>
-            <h3>Randolph/Harbor Dr</h3>
-          </div>
-          <div class="arrival-time">
-            <h1>3 mins</h1>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
-            <h4>124</h4>
-            <h2>Eastbound to</h2>
-            <h3>Navy Pier</h3>
-          </div>
-          <div class="arrival-time">
-            <h1>4 mins</h1>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
-            <h4>151</h4>
-            <h2>Northbound to</h2>
-            <h3>Devon/Clark</h3>
-          </div>
-          <div class="arrival-time">
-            <h1>5 mins</h1>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
-            <h4>J14</h4>
-            <h2>Southbound to</h2>
-            <h3>103rd/Stony Island</h3>
-          </div>
-          <div class="arrival-time">
-            <h1>8 mins</h1>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
-            <h4>124</h4>
-            <h2>Southbound to</h2>
-            <h3>Navy Pier</h3>
-          </div>
-          <div class="arrival-time">
-            <h1>9 mins</h1>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
-            <h4>6x</h4>
-            <h2>Reroute</h2>
-            <h3>Jackson Park Express</h3>
-          </div>
-          <div class="arrival-time">
-            <h1>11 mins</h1>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
-            <h4>124</h4>
-            <h2>Eastbound to</h2>
-            <h3>Navy Pier</h3>
-          </div>
-          <div class="arrival-time">
-            <h1>14 mins</h1>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
-            <h4>4</h4>
-            <h2>Out of Service</h2>
-            <h3>Cottage Grove</h3>
-          </div>
-          <div class="arrival-time-suspended">
-            <h5>Resumes <h5> <h1>12:10am</h1>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
-            <h4>20</h4>
-            <h2>Out of Service</h2>
-            <h3>Madison</h3>
-          </div>
-          <div class="arrival-time-suspended">
-            <h5>Resumes </h5> <h1>12:10am</h1>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
-            <h4>157</h4>
-            <h2>Out of Service</h2>
-            <h3>Streeterville/Taylor</h3>
-          </div>
-          <div class="arrival-time-suspended">
-            <h5>Resumes </h5> <h1>6:00am</h1>
-          </div>
-        </div>
+        <ul class="placeholder-for-navbar">
+          <li>
+          </li>
+        </ul>
+        <ul>
+          <li class="nextbus-container"><!--first route-->
+            <ul><!--container for first route information-->
+              <li class="left route-number"> <!--route number-->
+                60
+              </li>
+              <li class="center">
+                <ul> <!--container for 2 rows -->
+                  <li class="direction">
+                    Eastbound to
+                  </li>
+                  <li class="destination">
+                    Randolph/Harbor Dr
+                  </li>
+                </ul>
+              </li>
+              <li class="right next-bus-eta">
+                <ul>
+                  <li>
+                    3 mins
+                  </li>
+                  <li class="repeat-time">
+                    or 23 mins
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="nextbus-container"><!--first route-->
+            <ul><!--container for first route information-->
+              <li class="left route-number"> <!--route number-->
+                124
+              </li>
+              <li class="center">
+                <ul> <!--container for 2 rows -->
+                  <li class="direction">
+                    Eastbound to
+                  </li>
+                  <li class="destination">
+                    Navy Pier
+                  </li>
+                </ul>
+              </li>
+              <li class="right next-bus-eta">
+                <ul>
+                  <li>
+                    4 mins
+                  </li>
+                  <li class="repeat-time">
+                    or 14 mins
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="nextbus-container"><!--first route-->
+            <ul><!--container for first route information-->
+              <li class="left route-number"> <!--route number-->
+                151
+              </li>
+              <li class="center">
+                <ul> <!--container for 2 rows -->
+                  <li class="direction">
+                    Northbound to
+                  </li>
+                  <li class="destination">
+                    Devon/Clark
+                  </li>
+                </ul>
+              </li>
+              <li class="right next-bus-eta">
+                <ul>
+                  <li>
+                    5 mins
+                  </li>
+                  <li class="repeat-time">
+                    or 21 mins
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="nextbus-container"><!--first route-->
+            <ul><!--container for first route information-->
+              <li class="left route-number"> <!--route number-->
+                J14
+              </li>
+              <li class="center">
+                <ul> <!--container for 2 rows -->
+                  <li class="direction">
+                    Southbound to
+                  </li>
+                  <li class="destination">
+                    103rd/Stony Island
+                  </li>
+                </ul>
+              </li>
+              <li class="right next-bus-eta">
+                <ul>
+                  <li>
+                    8 mins
+                  </li>
+                  <li class="repeat-time">
+                    or 23 mins
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="nextbus-container"><!--first route-->
+            <ul><!--container for first route information-->
+              <li class="left route-number"> <!--route number-->
+                124
+              </li>
+              <li class="center">
+                <ul> <!--container for 2 rows -->
+                  <li class="direction">
+                    Southbound to
+                  </li>
+                  <li class="destination">
+                    Navy Pier
+                  </li>
+                </ul>
+              </li>
+              <li class="right next-bus-eta">
+                <ul>
+                  <li>
+                    9 mins
+                  </li>
+                  <li class="repeat-time">
+                    or 19 mins
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="nextbus-container"><!--first route-->
+            <ul><!--container for first route information-->
+              <li class="left route-number"> <!--route number-->
+                6X
+              </li>
+              <li class="center">
+                <ul> <!--container for 2 rows -->
+                  <li class="direction">
+                    Reroute to
+                  </li>
+                  <li class="destination">
+                    Jackson Park Express
+                  </li>
+                </ul>
+              </li>
+              <li class="right next-bus-eta">
+                <ul>
+                  <li>
+                    11 mins
+                  </li>
+                  <li class="repeat-time">
+                    or none
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="nextbus-container"><!--first route-->
+            <ul><!--container for first route information-->
+              <li class="left route-number"> <!--route number-->
+                124
+              </li>
+              <li class="center">
+                <ul> <!--container for 2 rows -->
+                  <li class="direction">
+                    Eastbound to
+                  </li>
+                  <li class="destination">
+                    Navy Pier
+                  </li>
+                </ul>
+              </li>
+              <li class="right next-bus-eta">
+                <ul>
+                  <li>
+                    14 mins
+                  </li>
+                  <li class="repeat-time">
+                    or 24 mins
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="nextbus-container"><!--first route-->
+            <ul><!--container for first route information-->
+              <li class="left route-number"> <!--route number-->
+                124
+              </li>
+              <li class="center">
+                <ul> <!--container for 2 rows -->
+                  <li class="direction">
+                    Southbound to
+                  </li>
+                  <li class="destination">
+                    Navy Pier
+                  </li>
+                </ul>
+              </li>
+              <li class="right next-bus-eta">
+                <ul>
+                  <li>
+                    19 mins
+                  </li>
+                  <li class="repeat-time">
+                    or 29 mins
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="nextbus-container"><!--first route-->
+            <ul><!--container for first route information-->
+              <li class="left route-number"> <!--route number-->
+                151
+              </li>
+              <li class="center">
+                <ul> <!--container for 2 rows -->
+                  <li class="direction">
+                    Northbound to
+                  </li>
+                  <li class="destination">
+                    Devon/Clark
+                  </li>
+                </ul>
+              </li>
+              <li class="right next-bus-eta">
+                <ul>
+                  <li>
+                    23 mins
+                  </li>
+                  <li class="repeat-time">
+                    or 39 mins
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="nextbus-container"><!--first route-->
+            <ul><!--container for first route information-->
+              <li class="left route-number"> <!--route number-->
+                60
+              </li>
+              <li class="center">
+                <ul> <!--container for 2 rows -->
+                  <li class="direction">
+                    Eastbound to
+                  </li>
+                  <li class="destination">
+                    Randolph/Harbor Dr
+                  </li>
+                </ul>
+              </li>
+              <li class="right next-bus-eta">
+                <ul>
+                  <li>
+                    23 mins
+                  </li>
+                  <li class="repeat-time">
+                    or 43 mins
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="nextbus-container"><!--first route-->
+            <ul><!--container for first route information-->
+              <li class="left route-number"> <!--route number-->
+                J14
+              </li>
+              <li class="center">
+                <ul> <!--container for 2 rows -->
+                  <li class="direction">
+                    Southbound to
+                  </li>
+                  <li class="destination">
+                    103rd/Stony Island
+                  </li>
+                </ul>
+              </li>
+              <li class="right next-bus-eta">
+                <ul>
+                  <li>
+                    23 mins
+                  </li>
+                  <li class="repeat-time">
+                    or 38 mins
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="nextbus-container"><!--first route-->
+            <ul><!--container for first route information-->
+              <li class="left route-number"> <!--route number-->
+                124
+              </li>
+              <li class="center">
+                <ul> <!--container for 2 rows -->
+                  <li class="direction">
+                    Eastbound to
+                  </li>
+                  <li class="destination">
+                    Navy Pier
+                  </li>
+                </ul>
+              </li>
+              <li class="right next-bus-eta">
+                <ul>
+                  <li>
+                    24 mins
+                  </li>
+                  <li class="repeat-time">
+                    or 34 mins
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="nextbus-container"><!--first route-->
+            <ul><!--container for first route information-->
+              <li class="left route-number"> <!--route number-->
+                124
+              </li>
+              <li class="center">
+                <ul> <!--container for 2 rows -->
+                  <li class="direction">
+                    Southbound to
+                  </li>
+                  <li class="destination">
+                    Navy Pier
+                  </li>
+                </ul>
+              </li>
+              <li class="right next-bus-eta">
+                <ul>
+                  <li>
+                    29 mins
+                  </li>
+                  <li class="repeat-time">
+                    or 39 mins
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="nextbus-container"><!--first route-->
+            <ul><!--container for first route information-->
+              <li class="left route-number"> <!--route number-->
+                124
+              </li>
+              <li class="center">
+                <ul> <!--container for 2 rows -->
+                  <li class="direction">
+                    Eastbound to
+                  </li>
+                  <li class="destination">
+                    Navy Pier
+                  </li>
+                </ul>
+              </li>
+              <li class="right next-bus-eta">
+                <ul>
+                  <li>
+                    34 mins
+                  </li>
+                  <li class="repeat-time">
+                    or 44 mins
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <section class="out-of-service">
+          <h2>The following lines are out of service</h2>
+        </section>
+        <section>
+          <ul>
+            <li class="nextbus-container"><!--first route-->
+              <ul><!--container for first route information-->
+                <li class="left-oos route-number"> <!--route number-->
+                  4
+                </li>
+                <li class="center destination">
+                  Cottage Grove
+                </li>
+                <li class="right-oos next-bus-oos">
+                  <ul>
+                    <li class="resumes-at">
+                      Resumes at
+                    </li>
+                    <li class="resumes-at-time">
+                      12:10am
+                    </li>
+                  </ul>
+                </li>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li class="nextbus-container"><!--first route-->
+              <ul><!--container for first route information-->
+                <li class="left-oos route-number"> <!--route number-->
+                  20
+                </li>
+                <li class="center destination">
+                  Madison
+                </li>
+                <li class="right-oos next-bus-oos">
+                  <ul>
+                    <li class="resumes-at">
+                      Resumes at
+                    </li>
+                    <li class="resumes-at-time">
+                      12:10am
+                    </li>
+                  </ul>
+                </li>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li class="nextbus-container"><!--first route-->
+              <ul><!--container for first route information-->
+                <li class="left-oos route-number"> <!--route number-->
+                  157
+                </li>
+                <li class="center destination">
+                  Streeterville/Taylor
+                </li>
+                <li class="right-oos next-bus-oos">
+                  <ul>
+                    <li class="resumes-at">
+                      Resumes at
+                    </li>
+                    <li class="resumes-at-time">
+                      6:00am
+                    </li>
+                  </ul>
+                </li>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="placeholder-for-footer">
+            <li>
+            </li>
+          </ul>
+        </section>
       </section>
       <section class="footer">
-        <div class="footer-icons selected-icon">
-          <i class="fas fa-bus fa-3x"></i>
-          <h6>Bus</h6>
-        </div>
-        <div class="footer-icons">
-          <i class="fas fa-train fa-3x"></i>
-          <h6>Rail</h6>
-        </div>
-        <div class="footer-icons">
-            <i class="fas fa-star fa-3x"></i>
-            <h6>Saved</h6>
-        </div>
-        <div class="footer-icons">
-          <i class="fas fa-map-marker-alt fa-3x"></i>
-          <h6>Nearby</h6>
-        </div>
-        <div class="footer-icons">
-          <i class="fas fa-wrench fa-3x"></i>
-          <h6>Settings</h6>
-        </div>
+        <table class="footer-table">
+          <tr class="footer-icon-row">
+            <td class="footer-icons"><i class="fas fa-3x fa-bus"></i></td>
+            <td><i class="fas fa-train fa-3x"></i></td>
+            <td><i class="fas fa-star fa-3x"></i></td>
+            <td><i class="fas fa-map-marker-alt fa-3x"></i></td>
+            <td><i class="fas fa-wrench fa-3x"></i></td>
+          </tr>
+          <tr>
+            <td class="fa-bus"><h6>Bus</h6></td>
+            <td><h6>Rail</h6></td>
+            <td><h6>Saved</h6></td>
+            <td><h6>Nearby</h6></td>
+            <td><h6>Settings</h6></td>
+          </tr>
+        </table>
       </section>
     </section>
 
