@@ -81,20 +81,20 @@ h2 {
 
 h3 {
   font-size: 1.5em;
+  font-weight: 700;
   line-height: .8em;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 h4 {
-  font-size: 1.8em;
+  font-size: 1.9em;
+  font-weight: 300;
   line-height: .8em;
 }
 
 h5 {
-/* use for direction and resumes at in listing */
   font-size: 1.3em;
-  line-height: .6em;
+  line-height: .8em;
 }
 
 h6 {
@@ -190,9 +190,9 @@ nav {
 }
 
 .nextbus-list {
+  background-color: #fff;
   padding: 0 0 0 0;
   width: 100%;
-  background-color: #fff;
 }
 
 .out-of-service, .stop-name {
@@ -206,13 +206,13 @@ nav {
 }
 
 .placeholder-for-footer {
-  height: 65px;
   background-color: #fff;
+  height: 65px;
 }
 
 .placeholder-for-navbar {
-  height:138px;
   background-color: #fff;
+  height:138px;
 }
 
 .pin {
