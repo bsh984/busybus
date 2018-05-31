@@ -15,7 +15,14 @@ body {
 }
 
 .center {
-  padding: 1em 0;
+  display: inline-block;
+  padding: 1.6em 0 .5em 0;
+  width: 55%;
+}
+
+.center-oos{
+  display: inline-block;
+  padding: 2em 0 .5em 0;
   width: 55%;
 }
 
@@ -24,28 +31,13 @@ body {
   width: 375px;
 }
 
-.destination {
-  font-size: 1.5em;
-  line-height: 1.6em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.direction, .resumes-at {
-  font-size: 1.3em;
-  line-height: 1.4em;
-}
-
-.repeat-time {
-  font-size: 12px;
-}
-
 .fa-bus{
   color: #007AFF;
 }
 
 .fa-map-pin{
   color:#000;
+  /* display: inline-block; */
 }
 
 .fa-train, .fa-star, .fa-map-marker-alt, .fa-wrench, .fas {
@@ -76,9 +68,10 @@ body {
 }
 
 h1 {
-  font-size: 2em;
+  display: inline-block;
+  font-size: 2.5em;
   font-weight: 700;
-  line-height: 1.5em;
+  padding: 2%;
 }
 
 h2 {
@@ -86,10 +79,22 @@ h2 {
   line-height: 1.2em;
 }
 
-h4 {
-  font-size: 2.5em;
+h3 {
+  font-size: 1.5em;
+  line-height: .8em;
+  text-transform: uppercase;
   font-weight: 700;
-  padding: 2%;
+}
+
+h4 {
+  font-size: 1.8em;
+  line-height: .8em;
+}
+
+h5 {
+/* use for direction and resumes at in listing */
+  font-size: 1.3em;
+  line-height: .6em;
 }
 
 h6 {
@@ -108,13 +113,21 @@ h6 {
 }
 
 .left {
-  padding: .7em 0 0 .5em;
+  display: inline-block;
+  font-size: 2.5em;
+  font-weight: 100;
+  padding: .65em 0 .5em .5em;
+  text-align: left;
   vertical-align: top;
   width: 18%;
 }
 
 .left-oos {
-  padding: .5em 0 0 .5em;
+  display: inline-block;
+  font-size: 2.5em;
+  font-weight: 100;
+  padding: .6em 0 .5em .5em;
+  text-align: left;
   vertical-align: top;
   width: 18%;
 }
@@ -141,6 +154,11 @@ nav {
 .nav-cell-2 {
   text-align: center;
   width: 57%;
+}
+.nav-cell-2 h4 {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: .7em;
 }
 
 .nav-info {
@@ -177,20 +195,6 @@ nav {
   background-color: #fff;
 }
 
-.next-bus-eta {
-  font-size: 2em;
-  font-weight: 200;
-  line-height: 1em;
-  padding-right: .5em;
-  text-align: right;
-}
-
-.next-bus-oos {
-  font-weight: 200;
-  padding-right: 1em;
-  text-align: right;
-}
-
 .out-of-service, .stop-name {
   background-color: #eee;
   padding: 1em 0 .2em 2em;
@@ -201,24 +205,13 @@ nav {
   weight: 200;
 }
 
-.stop-name {
-  position: fixed;
-  top: 72px;
-  width: inherit;
-}
-
-.stop-name h4 {
-  display: inline-block;
-  padding: .8em 0 .8em .8em;
-}
-
 .placeholder-for-footer {
   height: 65px;
   background-color: #fff;
 }
 
 .placeholder-for-navbar {
-  height:164px;
+  height:138px;
   background-color: #fff;
 }
 
@@ -226,45 +219,33 @@ nav {
   display: inline-block;
 }
 
-.resumes-at-time {
-  font-size: 1.5em;
-  line-height: 1.4em;
-  text-transform: uppercase;
-}
-
 .right {
-  padding: .6em .5em 0 0;
+  display: inline-block;
+  padding: 1.3em 1em 1.3em 0;
+  text-align: right;
   vertical-align: top;
   width: 25%;
 }
 
 .right-oos {
-  padding: .4em 1em 0 0;
+  display: inline-block;
+  padding: 1.3em 1em 1.5em 0;
+  text-align: right;
   vertical-align: top;
   width: 25%;
 }
 
-.route-number {
-  font-size: 2.5em;
-  font-weight: 100;
-  padding-left: .5em;
-  text-align: left;
+.right-oos h4 {
+  font-size: 1.5em;
+}
 
+.stop-name {
+  position: fixed;
+  top: 72px;
+  width: inherit;
 }
 
 ul {
   padding: 0;
   width: 100%;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-ul li ul li {
-  display: inline-block;
-}
-
-ul li ul li ul li{
-  display: block;
 }
